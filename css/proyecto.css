@@ -1,0 +1,59 @@
+#galeria {
+    width: 100%;
+    height: 490px;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#galeria div {
+    width: 29.29%;
+    height: 200px;
+    background-color: white;
+    margin: 15px;
+}
+
+#cont2 {
+    width: 100%;
+    height: 90px;
+    background-color: dimgrey;
+    display: flex;
+    align-items: center;
+}
+
+#cont2 h1 {
+    margin-left: 140px;
+}
+
+#datos {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+}
+
+.datos {
+    margin-top: 10px;
+}
+
+#pieza {
+    width: 100%;
+    height: 500px;
+    background-color: lightgrey;
+}
+
+#cont3 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#texto {
+    width: 80%;
+    height: auto;
+    margin-left: 90px;
+}
