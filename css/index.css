@@ -9,7 +9,6 @@
 
 .header {
     width: 100%;
-    height: 22.5%;
     display: flex;
     background-image: url(../imagenes/banner.jpg);
     background-repeat: no-repeat;
@@ -60,9 +59,9 @@
     position: fixed;
     top: 5.5vh;
     right: 5.5vw;
-    background-image: radial-gradient(green, black);
+    background: #AC90E8;
     z-index: 1000;
-
+    opacity: 0.85;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
@@ -92,7 +91,11 @@
     font-size: 36px;
 }
 
-.header .link:link,
+.header .item a {
+    color: whitesmoke;
+}
+
+/* .header .link:link,
 .header .link:visited {
     display: inline-block;
     font-size: 3rem;
@@ -100,18 +103,18 @@
     padding: 1rem 2rem;
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; 
     background-image: linear-gradient(120deg,
             transparent 0%,
             transparent 50%,
             white 50%);
     background-size: 220%;
     transition: all 0.4s;
-}
+} */
 
 .header .link:hover,
 .header .link:active {
-    color: lightgreen;
+    color: #6F60A6;
     cursor: pointer;
 }
 
@@ -372,13 +375,27 @@ footer div {
         height: auto;
     }
 
+    .logo-contenedor {
+        justify-content: flex-start;
+        height: 158px;
+    }
+
+    .logo {
+        margin-left: 1rem;
+    }
+
+    .header-list {
+        top: 35%;
+        left: 45%;
+    }
+
     h1 {
         font-size: 40px;
     }
 
     .reel {
         width: 100%;
-        height: auto;
+        height: 250px;
         margin: 0 auto;
     }
 
@@ -389,7 +406,6 @@ footer div {
 
     .cuadrado {
         width: 90%;
-        height: 250px;
         background-color: #CFDCFF;
         display: flex;
         justify-content: flex-start;
