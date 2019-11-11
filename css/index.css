@@ -77,21 +77,41 @@ header {
 .proyecto-contenedor {
     position: relative;
     width: 100%;
-
 }
 
 .proyecto-overlay {
-    width: 100%;
     height: 100%;
-    color: white;
+    width: 100%;
+    flex-flow: column;
     position: absolute;
+    display: flex;
     opacity: 0;
     transition: all 0.5s linear 0.2s;
 }
 
+.proyecto-overlay .overlay-titulo {
+    color: #90A3E8;
+    background-color: whitesmoke;
+}
+
+.proyecto-overlay .overlay-titulo h2 {
+    font-size: 3rem;
+}
+
+.proyecto-overlay .overlay-desc h3 {
+    font-size: 2rem;
+}
+
+.proyecto-overlay .overlay-desc {
+    color: white;
+    background-color: transparent;
+    padding: 1rem;
+    text-align: center;
+}
+
 .proyecto-contenedor:hover .proyecto-overlay {
     z-index: 10;
-    opacity: 0.85;
+    opacity: 0.90;
     width: 30%;
 }
 
@@ -100,10 +120,19 @@ header {
     right: 0;
 }
 
+.proyecto-overlay.overlay1 .overlay-titulo {
+    color: #90A3E8;
+}
+
 .proyecto-overlay.overlay2 {
     background-color: #6F60A6;
     left: 0;
 }
+
+.proyecto-overlay.overlay2 .overlay-titulo {
+    color: #6F60A6;
+}
+
 
 .proyecto-overlay h2 {
     text-align: center;
