@@ -8,19 +8,36 @@
 	<title>Valenwn (Valentina Rojas) Portafolio</title>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/box-shadows.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
-	<div class="contenedor">
-		<header>
-			<div class="contizq">
+	<div class="main">
+		<header class="header">
+			<div class="logo-contenedor">
 				<div class="logo"></div>
 			</div>
-			<!-- <nav class="contder">
-				<div class="div1"></div>
-			</nav> -->
+
+			<!-- hamburger btn -->
+			<input type="checkbox" id="navi-toggle" class="checkbox" />
+			<label for="navi-toggle" class="button">
+				<span class="icon">&nbsp;</span>
+			</label>
+			<div class="background">&nbsp;</div>
+
+			<!-- nav -->
+			<nav class="nav">
+				<ul class="list">
+					<li class="item"> <a class="link"> Link 1 </a> </li>
+					<li class="item"> <a class="link"> Link 2 </a> </li>
+					<li class="item"> <a class="link"> Link 4 </a> </li>
+					<li class="item"> <a class="link"> Link 5 </a> </li>
+					<li class="item"> <a class="link"> Link 6 </a> </li>
+				</ul>
+			</nav>
+
 		</header>
 		<section class='reel'>
 			<!-- <div id="reel"><video width="100%" height="auto" controls src="imagenes/Reel_1.mp4"></video></div> -->
@@ -33,7 +50,7 @@
 		</div>
 		<section class="proyectos">
 			<div class="proyecto-contenedor">
-				<div class="proyecto-overlay overlay1">
+				<div class="proyecto-overlay overlay1 card-3">
 					<div class="overlay-titulo">
 						<h2>Animaci&oacuten</h2>
 					</div>
@@ -47,12 +64,12 @@
 				</div>
 			</div>
 			<div class="proyecto-contenedor">
-				<div class="proyecto-overlay overlay2">
+				<div class="proyecto-overlay overlay2 card-3">
 					<div class="overlay-titulo">
 						<h2>Piezas Graficas</h2>
 					</div>
 					<div class="overlay-desc">
-						<h3>Ilustracion Vectorial</h3>
+						<h3>Ilustraci&oacuten Vectorial</h3>
 						<h3>Letthering</h3>
 					</div>
 				</div>
@@ -65,7 +82,7 @@
 			<h1>Sobre mí</h1>
 		</div>
 		<section class="sobre-mi">
-			<div class="cuadrado">
+			<div class="cuadrado card-3">
 				<div class="cuadrado-titulo">
 					<h3>PERFIL</h3>
 				</div>
@@ -75,7 +92,7 @@
 						voluptate consectetur vero aspernatur quo dicta ut.</p>
 				</div>
 			</div>
-			<div class="cuadrado">
+			<div class="cuadrado card-3">
 				<div class="cuadrado-titulo">
 					<h3>HABILIDADES</h3>
 				</div>
@@ -85,7 +102,7 @@
 						voluptate consectetur vero aspernatur quo dicta ut.</p>
 				</div>
 			</div>
-			<div class="cuadrado">
+			<div class="cuadrado card-3">
 				<div class="cuadrado-titulo">
 					<h3>ESTUDIOS</h3>
 				</div>
@@ -95,7 +112,7 @@
 						voluptate consectetur vero aspernatur quo dicta ut.</p>
 				</div>
 			</div>
-			<div class="cuadrado">
+			<div class="cuadrado card-3">
 				<div class="cuadrado-titulo">
 					<h3>CLIENTES</h3>
 				</div>
@@ -106,16 +123,13 @@
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class="footer">
-				<div class="redes">
-					<div><img class="red" src="imagenes/behance.svg" alt="behance"></div>
-					<div><img class="red" src="imagenes/instagram.svg" alt="instagram"></div>
-					<div><img class="red" src="imagenes/mail.svg" alt="mail"></div>
-				</div>
-				<h3>Valentina Rojas Hernández <br> 2019</h3>
-
+		<footer class="footer">
+			<div class="redes">
+				<div><img class="red" src="imagenes/behance.svg" alt="behance"></div>
+				<div><img class="red" src="imagenes/instagram.svg" alt="instagram"></div>
+				<div><img class="red" src="imagenes/mail.svg" alt="mail"></div>
 			</div>
+			<h3>Valentina Rojas Hernández <br> 2019</h3>
 		</footer>
 	</div>
 

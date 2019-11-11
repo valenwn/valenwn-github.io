@@ -1,6 +1,13 @@
+.main {
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    background: #333333;
+}
+
 /* Section: Header */
 
-header {
+.header {
     width: 100%;
     height: 22.5%;
     display: flex;
@@ -9,15 +16,8 @@ header {
     background-position: center;
 }
 
-.contenedor {
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-    background: #333333;
-}
-
-.contizq {
-    width: 80%;
+.logo-contenedor {
+    width: 1000%;
     height: 225px;
     display: flex;
     justify-content: center;
@@ -32,22 +32,165 @@ header {
     background-repeat: no-repeat;
 }
 
-.contder {
-    max-width: 200px;
-    height: 225px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* hamburger */
+/* https://codepen.io/Multiple-Illusionsi/pen/eYYYerO */
+.header .checkbox {
+    display: none;
 }
 
-.div1 {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
-    display: flex;
-    background-color: white;
+.header .button {
+    position: relative;
+    background-color: whitesmoke;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5vh;
+    right: 5vw;
+    z-index: 2000;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .background {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5.5vh;
+    right: 5.5vw;
+    background-image: radial-gradient(green, black);
+    z-index: 1000;
+
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.header .nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s;
+}
+
+.header .list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.header .item {
+    margin: 1rem;
+    font-size: 36px;
+}
+
+.header .link:link,
+.header .link:visited {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg,
+            transparent 0%,
+            transparent 50%,
+            white 50%);
+    background-size: 220%;
+    transition: all 0.4s;
+}
+
+.header .link:hover,
+.header .link:active {
+    color: lightgreen;
+    cursor: pointer;
+}
+
+/* functionality */
+.checkbox:checked~.background {
+    transform: scale(80);
+}
+
+.checkbox:checked~.nav {
+    opacity: 1;
+    width: 100%;
+    right: 0;
+}
+
+
+/* functionality */
+.header .checkbox:checked~.background {
+    transform: scale(80);
+}
+
+.header .checkbox:checked~.nav {
+    opacity: 1;
+    width: 100%;
+    right: 0;
+}
+
+/* styling hamb ICON */
+.header .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .icon,
+.header .icon::before,
+.header .icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: gray;
+    display: inline-block;
+}
+
+.header .icon::before,
+.header .icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.header .icon::before {
+    top: -0.8rem;
+}
+
+.header .icon::after {
+    top: 0.8rem;
+}
+
+.header .button:hover icon:before {
+    top: -1rem;
+}
+
+.header .button:hover icon::after {
+    top: 1rem;
+}
+
+.header .checkbox:checked+.button .icon {
+    background-color: transparent;
+}
+
+.header .checkbox:checked+.button .icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.header .checkbox:checked+.button .icon::after {
+    top: 0;
+    transform: rotate(-135deg);
 }
 
 /* Section: Reel*/
@@ -80,7 +223,7 @@ header {
 }
 
 .proyecto-overlay {
-    height: 100%;
+    height: 99.5%;
     width: 100%;
     flex-flow: column;
     position: absolute;
@@ -158,7 +301,6 @@ header {
 
 .cuadrado {
     width: 44.9%;
-    height: 320px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -191,7 +333,7 @@ footer div {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #333333;
+    color: white;
 }
 
 .redes {
@@ -201,7 +343,6 @@ footer div {
     align-content: center;
     justify-content: center;
     margin-top: 60px;
-
 }
 
 .red {
