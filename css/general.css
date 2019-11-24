@@ -31,9 +31,10 @@ a {
 }
 
 p {
-    font-size: 16px;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    margin: 60px 100px 30px 80px;
+    font-size: 20px;
+    font-family: Arial Narrow;
+	margin: 30px;
+	color: #3B5063;
 }
 
 /* Misc */

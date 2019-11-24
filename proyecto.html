@@ -6,60 +6,102 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Valenwn (Valentina Rojas) Portafolio</title>
+	<link rel="stylesheet" href="css/proyecto.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/general.css">
-	<link rel="stylesheet" href="css/proyecto.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="css/box-shadows.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-	<div id="contenedor">
-		<header>
-			<div id="contizq">
-				<div id="logo"></div>
+<div class="main">
+		<a name="inicio"></a>
+		<header class="header">
+			<div class="logo-contenedor">
+				<div class="logo"></div>
 			</div>
-			<nav id="contder">
-				<div class="div1"></div>
+
+			<!-- hamburger btn -->
+			<input type="checkbox" id="navi-toggle" class="checkbox" />
+			<label for="navi-toggle" class="button">
+				<span class="icon">&nbsp;</span>
+			</label>
+			<div class="background">&nbsp;</div>
+
+			<!-- nav -->
+			<nav class="nav">
+				<ul class="list">
+					<li class="item"> <a class="link" href="index.html"> Inicio </a> </li>
+					<li class="item"> <a class="link" href="index.html"> Proyectos </a> </li>
+					<li class="item"> <a class="link" href="index.html"> Sobre Mi </a> </li>
+				</ul>
 			</nav>
 		</header>
 		<section>
-			<div id="galeria">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
+			<div class="galeria">
+				<div class= "marcoimg">
+					<img class="imggal" src="imagenes/principiosanima.jpeg" alt="principios">
+					<div class="marcoinf"></div>
+				</div>
+				<div class= "marcoimg">
+					<img class="imggal" src="imagenes/motion1.jpg" alt="motion graphics">
+					<div class="marcoinf"></div>
+				</div>
+				<div class= "marcoimg">
+					<img class="imggal" src="imagenes/motion2.jpg" alt="motion graphics">
+					<div class="marcoinf"></div>
+				</div>
+				<div class= "marcoimg">
+					<img  class="imggal" src="imagenes/corto.jpeg" alt="aniamcion 3D">
+					<div class="marcoinf"></div>
+				</div>
+				<div class= "marcoimg">
+					<img class="imggal" src="imagenes/applectura.jpg" alt="">
+					<div class="marcoinf"></div>
+				</div>
+				<div class= "marcoimg">	
+					<img class="imggal" src="imagenes/motion3.jpg" alt="">
+					<div class="marcoinf"></div>
+				</div>
 			</div>
 		</section>
+		<div class="proyecto-contenedor">			
+			<div class="proyecto-img">
+					<img class="imgpr" src="imagenes/principiosanima.jpeg" alt="principiosanimacion">
+			</div>
+		</div>
 		<section id="proyecto">
-			<div id="cont2">
+			<div class="barra1">
 				<h1>Nombre del proyecto</h1>
 			</div>
-			<div id="datos">
-				<div class="datos">
-					<h3>Rol</h3>
+			<div class="datos">
+				<div class="dato">
+					<h2>Rol</h2>
 				</div>
-				<div class="datos">
-					<h3>Agencia</h3>
+				<div class="dato">
+					<h2>Agencia</h2>
 				</div>
-				<div class="datos">
-					<h3>Fecha</h3>
+				<div class="dato">
+					<h2>Fecha</h2>
 				</div>
 			</div>
-			<div id="pieza"></div>
 			<div id="cont3">
 				<div id="texto">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque ducimus non officia
-						obcaecati aspernatur doloremque velit, debitis est provident? Consequuntur, magni nam tenetur.
-						Voluptate sit eum atque beatae explicabo.</p>
-					<p>Concepto</p>
-					<p>Objetivo</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatum modi aliquid cum, quidem sapiente est velit repellendus dignissimos dolorem, odio nesciunt! Illum accusamus veritatis eum molestias, quibusdam sed temporibus!
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero possimus dignissimos, illum explicabo consequatur distinctio iste vero culpa. Rerum alias explicabo reprehenderit iusto, laudantium esse ipsam aperiam eius dolore placeat!
+				</p>
 				</div>
 			</div>
 		</section>
+		<footer class="footer">
+			<div class="redes">
+				<div><img class="red" src="imagenes/behance.svg" alt="behance"></div>
+				<div><img class="red" src="imagenes/instagram.svg" alt="instagram"></div>
+				<div><img class="red" src="imagenes/mail.svg" alt="mail"></div>
+			</div>
+			<h3>Valentina Rojas Hernández <br> 2019</h3>
+		</footer>
 	</div>
-
 </body>
 
 </html>
