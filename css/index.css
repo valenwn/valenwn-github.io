@@ -9,15 +9,37 @@
 
 .header {
     width: 100%;
+    height: 200px;
     display: flex;
+    flex-flow: column;
     background-image: url(../imagenes/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.header .autor-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+
+.header .autor-info h1 {
+    color: white;
+    font-family: HelveticaNeueLTCom-LtCn, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.header .autor-info h2 {
+    color: white;
+    font-family: HelveticaNeueLTCom-LtCn, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
 .logo-contenedor {
     width: 100%;
-    height: 225px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +48,6 @@
 .logo {
     width: 240px;
     height: 124px;
-    margin-left: 100px;
     background-image: url(../imagenes/logo.svg);
     background-repeat: no-repeat;
 }
@@ -94,23 +115,6 @@
 .header .item a {
     color: whitesmoke;
 }
-
-/* .header .link:link,
-.header .link:visited {
-    display: inline-block;
-    font-size: 3rem;
-    font-weight: 300;
-    padding: 1rem 2rem;
-    color: white;
-    text-decoration: none;
-    /* text-transform: uppercase; 
-    background-image: linear-gradient(120deg,
-            transparent 0%,
-            transparent 50%,
-            white 50%);
-    background-size: 220%;
-    transition: all 0.4s;
-} */
 
 .header .link:hover,
 .header .link:active {
@@ -283,8 +287,9 @@
 .proyecto-overlay h2 {
     text-align: center;
 }
-.proyecto-contenedor{
-	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.19);
+
+.proyecto-contenedor {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
 }
 
 .proyecto-contenedor .imgpr {
@@ -304,9 +309,9 @@
     background-color: #90A3E8;
 }
 
-.cuadrado{
+.cuadrado {
     width: 44.9%;
-	height: 300px;
+    height: 300px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -320,47 +325,48 @@
 }
 
 .sobre-mi .cuadrado .cuadrado-contenido {
-	height: 350px;
+    height: 350px;
     background-color: #CFDCFF;
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .cuadrado-contenido {
-	height: 350px;
+    height: 350px;
     background-color: #CFDCFF;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.habilidades{
-	width: 50%;
-	height: auto;
-}
-.cuadrado-contenido2{
-	height: 350px;
-    background-color: #CFDCFF;
-	display: flex;
-	justify-content: center;
-	align-content: space-around;
-	flex-wrap: wrap;
-	flex-direction: row;
+.habilidades {
+    width: 50%;
+    height: auto;
 }
 
-.cuadrado-contenido3{
-	height: 350px;
+.cuadrado-contenido2 {
+    height: 350px;
     background-color: #CFDCFF;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-wrap: wrap;
-	flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cuadrado-contenido3 {
+    height: 350px;
+    background-color: #CFDCFF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .logocliente {
-	width: 35%;
-	height: auto;
+    width: 35%;
+    height: auto;
 }
 
 /* Section: Footer */
@@ -399,8 +405,9 @@ footer div {
     margin-right: 15px;
 
 }
+
 .red:hover {
-	opacity: 0.4;
+    opacity: 0.4;
 }
 
 .footer h3 {
@@ -411,13 +418,13 @@ footer div {
 /* Responsive */
 @media only screen and (max-width : 800px) {
 
-    .main{
-       width: 100%;
-        height: auto;
-    }
-	.header {
+    .main {
         width: 100%;
         height: auto;
+    }
+
+    .header {
+        width: 100%;
     }
 
     .logo-contenedor {
@@ -433,15 +440,15 @@ footer div {
         top: 35%;
         left: 45%;
     }
-	
-	.header .button{
-		top: 5vh;
-	}
-	
-	.header .background{
-		top: 6vh;
-	}
-	
+
+    .header .button {
+        top: 5vh;
+    }
+
+    .header .background {
+        top: 6vh;
+    }
+
     h1 {
         font-size: 35px;
     }
@@ -451,17 +458,20 @@ footer div {
         height: 350px;
         margin: 0 auto;
     }
-	
-	.proyecto-overlay .overlay-titulo h2 {
-    font-size: 2.5rem;
-	}
-	.barra1{
-		height: 80px;
-		
-	}
-	.barra2{
-		height: 80px;
-	}
+
+    .proyecto-overlay .overlay-titulo h2 {
+        font-size: 2.5rem;
+    }
+
+    .barra1 {
+        height: 80px;
+
+    }
+
+    .barra2 {
+        height: 80px;
+    }
+
     .sobre-mi {
         width: 100%;
         height: auto;
@@ -476,80 +486,87 @@ footer div {
         align-items: center;
         margin-top: 20px;
     }
-	
 
-	.redes{
-		margin-top: 20px;
-	}
-	.cuadrado-contenido{
-		height: 200px;
-	}
-	
+
+    .redes {
+        margin-top: 20px;
+    }
+
+    .cuadrado-contenido {
+        height: 200px;
+    }
+
 }
 
-@media only screen and (max-width : 700px){
-	.proyecto-overlay .overlay-titulo h2 {
-    font-size: 2rem;
-	}
-	
+@media only screen and (max-width : 700px) {
+    .proyecto-overlay .overlay-titulo h2 {
+        font-size: 2rem;
+    }
+
 }
 
 @media only screen and (max-width : 600px) {
-	
-	.logo-contenedor{
-	justify-content: center;
-    align-items: center;
-    height: 150px;
-	}
-	
-	.logo{
-	width: 150px;
-    height: 100px;
-	}
-	.reel{
-		width: 100%;
-		height: 300px;
-	}
-	
-	.barra1{
-		height: 60px;
-	}
-	.barra2{
-		height: 60px;
-	}
-	.proyecto-overlay .overlay-titulo h2 {
-    font-size: 1.3rem;
-}
-	.proyecto-overlay .overlay-desc{
-		padding: 0;
-	}
-	
-	.proyecto-overlay .overlay-desc h3 {
-    font-size: 1.5rem;
-	}
-		
-	 h1 {
+
+    .logo-contenedor {
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 100px;
+    }
+
+    .reel {
+        width: 100%;
+        height: 300px;
+    }
+
+    .barra1 {
+        height: 60px;
+    }
+
+    .barra2 {
+        height: 60px;
+    }
+
+    .proyecto-overlay .overlay-titulo h2 {
+        font-size: 1.3rem;
+    }
+
+    .proyecto-overlay .overlay-desc {
+        padding: 0;
+    }
+
+    .proyecto-overlay .overlay-desc h3 {
+        font-size: 1.5rem;
+    }
+
+    h1 {
         font-size: 25px;
     }
-	
-	.header .button{
-		top: 5vh;
-		width: 3.5rem;
-		height: 3.5rem;
-	}
-	
-	.header .background{
-		width: 2rem;
-		height: 2rem;
-		top: 6vh;
-	}
 
-	.header .icon, .header .icon::before, .header .icon::after{
-		width: 2rem;
-		height: 2px;
-	}
-	
-	.cuadrado{
-	width: 80%;
-	}
+    .header .button {
+        top: 5vh;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .header .background {
+        width: 2rem;
+        height: 2rem;
+        top: 6vh;
+    }
+
+    .header .icon,
+    .header .icon::before,
+    .header .icon::after {
+        width: 2rem;
+        height: 2px;
+    }
+
+    .cuadrado {
+        width: 80%;
+    }
 }

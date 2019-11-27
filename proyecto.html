@@ -14,11 +14,15 @@
 </head>
 
 <body>
-<div class="main">
+	<div class="main">
 		<a name="inicio"></a>
 		<header class="header">
 			<div class="logo-contenedor">
 				<div class="logo"></div>
+			</div>
+			<div class="autor-info">
+				<h1>Valentina Rojas - Portafolio</h1>
+				<h2>Diseño Grafico y Multimedia</h2>
 			</div>
 
 			<!-- hamburger btn -->
@@ -31,43 +35,57 @@
 			<!-- nav -->
 			<nav class="nav">
 				<ul class="list">
-					<li class="item"> <a class="link" href="index.html"> Inicio </a> </li>
-					<li class="item"> <a class="link" href="index.html"> Proyectos </a> </li>
-					<li class="item"> <a class="link" href="index.html"> Sobre Mi </a> </li>
+					<li class="item"> <a class="link" href="index.html#inicio"> Inicio </a> </li>
+					<li class="item"> <a class="link" href="index.html#proyectos"> Proyectos </a> </li>
+					<li class="item"> <a class="link" href="index.html#sobre-mi"> Sobre Mi </a> </li>
+					<li class="item"> <a class="link" href="imagenes/cv.pdf">Curiculum</a></li>
+					<li class="item"> <a class="link" href="contacto.html">Contacto</a></li>
 				</ul>
 			</nav>
 		</header>
 		<section>
 			<div class="galeria">
-				<div class= "marcoimg">
-					<img class="imggal" src="imagenes/principiosanima.jpeg" alt="principios">
-					<div class="marcoinf"></div>
+				<div class="marcoimg card-3">
+					<a data-fslightbox href="imagenes/principiosanima.jpeg">
+						<img class="imggal" src="imagenes/principiosanima.jpeg" alt="principios">
+						<div class="marcoinf">Principios</div>
+					</a>
 				</div>
-				<div class= "marcoimg">
-					<img class="imggal" src="imagenes/motion1.jpg" alt="motion graphics">
-					<div class="marcoinf"></div>
+				<div class="marcoimg card-3">
+					<a data-fslightbox href="imagenes/motion1.jpg">
+						<img class="imggal" src="imagenes/motion1.jpg" alt="motion-graphics">
+						<div class="marcoinf">Motion Graphics</div>
+					</a>
 				</div>
-				<div class= "marcoimg">
-					<img class="imggal" src="imagenes/motion2.jpg" alt="motion graphics">
-					<div class="marcoinf"></div>
+				<div class="marcoimg card-3">
+					<a data-fslightbox href="imagenes/motion2.jpg">
+						<img class="imggal" src="imagenes/motion2.jpg" alt="disenio-editorial">
+						<div class="marcoinf">Dise&ntildeo Editorial</div>
+					</a>
 				</div>
-				<div class= "marcoimg">
-					<img  class="imggal" src="imagenes/corto.jpeg" alt="aniamcion 3D">
-					<div class="marcoinf"></div>
+				<div class="marcoimg card-3">
+					<a data-fslightbox href="imagenes/corto.jpeg">
+						<img class="imggal" src="imagenes/corto.jpeg" alt="animacion-3d">
+						<div class="marcoinf">Aniamci&oacuten 3d</div>
+					</a>
 				</div>
-				<div class= "marcoimg">
-					<img class="imggal" src="imagenes/applectura.jpg" alt="">
-					<div class="marcoinf"></div>
+				<div class="marcoimg card-3">
+					<a data-fslightbox href="imagenes/applectura.jpg">
+						<img class="imggal" src="imagenes/applectura.jpg" alt="apps-educativas">
+						<div class="marcoinf">Apps Educativas</div>
+					</a>
 				</div>
-				<div class= "marcoimg">	
-					<img class="imggal" src="imagenes/motion3.jpg" alt="">
-					<div class="marcoinf"></div>
+				<div class="marcoimg card-3">
+					<a data-fslightbox href="imagenes/motion3.jpg">
+						<img class="imggal" src="imagenes/motion3.jpg" alt="lettering">
+						<div class="marcoinf">Lettering</div>
+					</a>
 				</div>
 			</div>
 		</section>
-		<div class="proyecto-contenedor">			
+		<!-- <div class="proyecto-contenedor">
 			<div class="proyecto-img">
-					<img class="imgpr" src="imagenes/principiosanima.jpeg" alt="principiosanimacion">
+				<img class="imgpr" src="imagenes/principiosanima.jpeg" alt="principiosanimacion">
 			</div>
 		</div>
 		<section id="proyecto">
@@ -87,12 +105,16 @@
 			</div>
 			<div id="cont3">
 				<div id="texto">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatum modi aliquid cum, quidem sapiente est velit repellendus dignissimos dolorem, odio nesciunt! Illum accusamus veritatis eum molestias, quibusdam sed temporibus!
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero possimus dignissimos, illum explicabo consequatur distinctio iste vero culpa. Rerum alias explicabo reprehenderit iusto, laudantium esse ipsam aperiam eius dolore placeat!
-				</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatum modi aliquid
+						cum, quidem sapiente est velit repellendus dignissimos dolorem, odio nesciunt! Illum accusamus
+						veritatis eum molestias, quibusdam sed temporibus!
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero possimus dignissimos, illum
+						explicabo consequatur distinctio iste vero culpa. Rerum alias explicabo reprehenderit iusto,
+						laudantium esse ipsam aperiam eius dolore placeat!
+					</p>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<footer class="footer">
 			<div class="redes">
 				<div><img class="red" src="imagenes/behance.svg" alt="behance"></div>
@@ -102,6 +124,9 @@
 			<h3>Valentina Rojas Hernández <br> 2019</h3>
 		</footer>
 	</div>
+	<script src="menus.js"></script>
+	<script src="scripts/fslightbox/fslightbox.js"></script>
+
 </body>
 
 </html>

@@ -1,6 +1,6 @@
-h2{
-	color: #6F60A6;
-	margin: 0px;
+h2 {
+    color: #6F60A6;
+    margin: 0px;
 }
 
 
@@ -13,15 +13,16 @@ h2{
     align-content: flex-start;
     justify-content: space-around;
 }
-.marcoimg{
-	width:  30%;
-	height: auto;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	margin-bottom: 30px;
+
+.marcoimg {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
 }
 
 .imggal {
@@ -29,20 +30,21 @@ h2{
     height: 200px;
 }
 
-.marcoinf{
-	width: 100%;
-	height: 30px;
-	background-color: #F2F2F2;
-	
+.marcoinf {
+    width: 100%;
+    height: 30px;
+    background-color: #F2F2F2;
+    font-family: Autumn in November, Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 #cont2 h1 {
     margin-left: 140px;
 }
 
-.imgpr{
-	width: auto;
-	height: auto;
+.imgpr {
+    width: auto;
+    height: auto;
 }
 
 
@@ -52,16 +54,16 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;	
+    background-color: white;
 }
 
 #cont3 {
     width: 100%;
-	height: 250px;
+    height: 250px;
     display: flex;
     justify-content: flex-start;
-	align-items: center;
-	background-color: #90A3E8;
+    align-items: center;
+    background-color: #90A3E8;
 }
 
 #texto {
@@ -69,7 +71,8 @@ h2{
     height: auto;
     margin-left: 100px;
 }
-p{
-	margin: 20px;
-	color: white;
+
+p {
+    margin: 20px;
+    color: white;
 }

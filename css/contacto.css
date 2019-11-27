@@ -1,0 +1,70 @@
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+form input,
+form textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    resize: none;
+
+
+}
+
+form #input-submit {
+    color: white;
+    font-family: Autumn in November, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    background: #6F60A6;
+    cursor: pointer;
+}
+
+form textarea {
+    height: 126px;
+}
+
+
+
+.half {
+    float: left;
+    width: 42.5%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 45.8%; 
+}
+
+.left {
+    margin-right: 7%;
+}
+
+
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
