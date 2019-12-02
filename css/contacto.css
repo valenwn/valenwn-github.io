@@ -1,50 +1,105 @@
-form {
-    max-width: 600px;
-    text-align: center;
-    margin: 20px auto;
+#formulario {
+	height: 420px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-form input,
-form textarea {
-    border: 0;
-    outline: 0;
-    padding: 1em;
-    display: block;
-    width: 100%;
-    margin-top: 1em;
-    font-family: 'Merriweather', sans-serif;
-    resize: none;
-
-
+.cf{    
+	width: 80%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
 }
 
-form #input-submit {
+.izq{
+	width: 50%;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;	
+}
+
+.der{
+	width: 50%;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	
+
+.card-2 {
+	width: 70%;
+	height: 35px;
+	border-radius: 25px;
+	border: none;
+	font-family: arial;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.card-3{
+	width: 90%;
+	height: 90%;
+	border-radius: 10px;
+	font-family: arial;
+	font-size: 15px;
+	font-style: italic;
+	border: none;
+}
+
+.card-5m{
+	
+	width: 15%;
+	height: 50px;
+	color: white;
+    font-size: 2.5rem;
+    background-color: #AC90E8;
+	border-radius: 30px;
+    cursor: pointer;
+	border: none;
+	margin-top: 50px;
+	
+}
+
+.card-5m:hover{
+	filter: brightness(120%);
+}
+
+#input-name{
+	padding-left: 30px;
+	border-radius: 30px;
+}
+
+#input-email{
+	padding-left: 30px;
+	border-radius: 30px;
+}
+#input-subject{
+	padding-left: 30px;
+	border-radius: 30px;
+}
+
+#input-message{
+	padding-top: 15px;
+	padding-left: 30px;
+	border-radius: 30px;
+}
+
+#input-submit {
     color: white;
-    font-family: Autumn in November, Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
-    background: #6F60A6;
+    font-family: HelveticaNeueLTCom-LtCn;
+    font-size: 1.7rem;
+    background-color: #AC90E8;
     cursor: pointer;
 }
 
-form textarea {
-    height: 126px;
-}
 
 
-
-.half {
-    float: left;
-    width: 42.5%;
-    margin-bottom: 1em;
-}
-
-.right {
-    width: 45.8%; 
-}
-
-.left {
-    margin-right: 7%;
-}
 
 
 @media (max-width: 480px) {

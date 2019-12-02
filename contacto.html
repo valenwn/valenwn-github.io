@@ -5,12 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Valenwn (Valentina Rojas) Portafolio</title>
+	<title>Contacto</title>
 	<link rel="stylesheet" href="css/contacto.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/general.css">
 	<link rel="stylesheet" href="css/box-shadows.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/animacion.css">
 </head>
 
 <body>
@@ -18,11 +19,11 @@
 		<a name="inicio"></a>
 		<header class="header">
 			<div class="logo-contenedor">
-				<div class="logo"></div>
+				<a href="index.html"><img class="logo" src="imagenes/logo.svg" alt="logo-valenwn"></a>
 			</div>
 			<div class="autor-info">
 				<h1>Valentina Rojas - Portafolio</h1>
-				<h2>Diseño Grafico y Multimedia</h2>
+				<h2>Diseño Gráfico y Multimedia</h2>
 			</div>
 
 			<!-- hamburger btn -->
@@ -43,24 +44,32 @@
 				</ul>
 			</nav>
 		</header>
-		<section>
+		<section id ="formulario">
 			<form class="cf">
-				<div class="half left cf">
+				<div class="izq">
 					<input class="card-2" type="text" id="input-name" placeholder="Nombre">
 					<input class="card-2" type="email" id="input-email" placeholder="Email">
 					<input class="card-2" type="text" id="input-subject" placeholder="Asunto">
 				</div>
-				<div class="half right cf">
+				<div class="der">
 					<textarea name="message" class="card-3"  type="text" id="input-message" placeholder="Mensaje"></textarea>
 				</div>
-				<input class="card-5" type="submit" value="Enviar" id="input-submit">
 			</form>
+			
+			<input class="card-5m " type="submit" value="Enviar" id="input-submit">
 		</section>
 		<footer class="footer">
 			<div class="redes">
-				<div><img class="red" src="imagenes/behance.svg" alt="behance"></div>
-				<div><img class="red" src="imagenes/instagram.svg" alt="instagram"></div>
-				<div><img class="red" src="imagenes/mail.svg" alt="mail"></div>
+				<div>
+					<a class="link" href="https://www.behance.net/vale_nwn"><img class="red" src="imagenes/behance.svg"
+							alt="behance"></a></div>
+				<div>
+					<a class="link" href="https://www.instagram.com/vale_nwn/"><img class="red"
+							src="imagenes/instagram.svg" alt="instagram"></a>
+				</div>
+				<div>
+					<a href=""><img class="red" src="imagenes/mail.svg" alt="mail"></a>
+				</div>
 			</div>
 			<h3>Valentina Rojas Hernández <br> 2019</h3>
 		</footer>

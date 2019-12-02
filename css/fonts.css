@@ -16,3 +16,8 @@
     font-family: HelveticaNeueLTCom-UltLt;
     src: url(../fuentes/HelveticaNeueLTCom-UltLt.ttf);
 }
+
+@font-face {
+    font-family: Ebrima;
+    src: url(../fuentes/ebrima.ttf);
+}
