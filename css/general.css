@@ -9,8 +9,8 @@ html {
 }
 
 h1 {
-    font-size: 40px;
-    font-family: Autumn in November;
+    font-size: 50px;
+    font-family: Amigos;
     color: white;
 }
 
@@ -20,13 +20,13 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
-    font-family: HelveticaNeueLTCom-UltLt;
+    font-size: 25px;
+    font-family: HelveticaNeueLTCom-LtCn;
 }
 
 a {
     text-decoration: none;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: HelveticaNeueLTCom-LtCn;
     color: black;
 }
 

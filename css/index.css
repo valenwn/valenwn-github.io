@@ -240,7 +240,7 @@
     width: 60%;
     height: 50px;
     border-radius: 40px;
-    background-color: #6F60A6;
+    background-color: #9ECCFF;
     cursor: pointer;
     margin: 0;
 	display: flex;
@@ -249,7 +249,7 @@
 	
 }
 .btn_ver:hover{
-	filter: brightness(120%)
+	filter: opacity(0.5)
 }
 .btn_ver a{
 	font-size: 2rem;
@@ -257,21 +257,6 @@
 	font-family:HelveticaNeueLTCom-LtCn;
 }
 
-.btn_ver2{
-	width: 60%;
-    height: 50px;
-    border-radius: 40px;
-    background-color: #90A3E8;
-    cursor: pointer;
-    margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.btn_ver2:hover{
-	filter: brightness(120%)
-}
 
 .proyecto-overlay {
     height: 99.5%;
@@ -374,71 +359,115 @@
 
 .sobre-mi {
     width: 100%;
-    height: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    height: auto;
     background-color: #90A3E8;
 }
-
-.cuadrado {
-    width: 44.9%;
-    height: 350px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+.perfil{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	background-color: white;
+	
+}
+.cont-perfil{
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	
+	
+}
+.titulos-sobre-mi{
+	color:#3B5063;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	margin-top: 30px;
+}
+.cont-perfil p{
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
-.sobre-mi .cuadrado .cuadrado-titulo {
-    color: #6F60A6;
-    background-color: white;
-    text-align: center;
-    width: 100%;
+.cuadrado-contenido-1{
+	width: 80%;
 }
 
-.sobre-mi .cuadrado .cuadrado-contenido {
-    height: 350px;
-    background-color: #CFDCFF;
-    display: flex;
-    align-items: center;
+.micon{
+	width: 30%;
+	height: 150px;
+	background-color: #9ECCFF;
 }
 
-.cuadrado-contenido {
-    height: 350px;
-    background-color: #CFDCFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.estudios {
+	width: 100%;
+	height: auto;
+	background-color: #9ECCFF; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.cuadrado-titulo{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	
+}
+.imgsm{
+	width: auto;
+	height: 70%;
+	position: relative;
+}
+.cuadrado-contenido{
+	width: 90%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
 }
 
-.habilidades {
-    width: 50%;
-    height: auto;
+.cuadrado-contenido1{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cuadrado-contenido1 p{
+	margin-left: 30px;
 }
 
-.cuadrado-contenido2 {
-    height: 350px;
-    background-color: #CFDCFF;
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
+.cuadrado-contenido2{
+	width: 90%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	
 }
-
-.cuadrado-contenido3 {
-    height: 350px;
-    background-color: #CFDCFF;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+.clientes{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: white;
 }
 
 .logocliente {
-    width: 35%;
+    width: 25%;
     height: auto;
 }
 
@@ -453,12 +482,11 @@ footer div {
 
 .footer {
     width: 100%;
-    height: 250px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
 }
 
 .redes {
@@ -486,7 +514,9 @@ footer div {
 .footer h3 {
     margin-top: 30px;
     text-align: center;
+	color: white;
 }
+
 
 /* Responsive */
 @media only screen and (max-width : 800px) {
@@ -579,7 +609,42 @@ footer div {
 	.proyecto-overlay .overlay-titulo h2 {
         font-size: 2rem;
     }
-
+	
+	    .cuadrado {
+        width: 80%;
+    }
+	.perfil{
+		flex-direction: column;
+	}
+	.cont-perfil{
+		width: 100%;
+		
+	}
+	.micon{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.cuadrado-contenido{
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+	}
+	.cuadrado-contenido1{
+		width: 80%;
+		
+	}
+	.cuadrado-contenido2{
+		flex-wrap: wrap;
+		align-content: space-around;
+		justify-content: space-around;
+		width: 80%;
+		
+	}
+	.logocliente{
+		width: 40%; 
+		height: auto;
+		margin-bottom: 20px;
+	}
 }
 
 @media only screen and (max-width : 600px) {
@@ -636,8 +701,11 @@ footer div {
         width: 2rem;
         height: 2px;
     }
+	.btn_ver{
+		height: 30px;
+	}
+	.btn_ver a {
+		font-size:1.5rem ;
+	}
 
-    .cuadrado {
-        width: 80%;
-    }
 }
