@@ -11,7 +11,6 @@ html {
 h1 {
     font-size: 50px;
     font-family: Amigos;
-    color: white;
 }
 
 h2 {
@@ -46,6 +45,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+	color: white;
 }
 
 .barra2 {
@@ -55,4 +55,5 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+	color: white;
 }
